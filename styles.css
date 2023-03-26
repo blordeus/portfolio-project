@@ -15,7 +15,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: rgba(0, 0, 0, 0.5);
+   background-color: rgba(175, 175, 175, 0.5);
    position: sticky;;
    top: 0; 
 }
@@ -103,4 +103,36 @@ body {
 }
 
 /*About Section*/
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
 
+}
+
+#pic{
+    display: flex;
+    z-index: 1;
+}
+
+#pic img{
+    width: 400px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+/* Portfolio Section */
