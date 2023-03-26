@@ -6,9 +6,11 @@
 }
 
 body {
-    background-color: 080808;
+    background-color: lightblue;
     color: black;
 }
+
+
 /* Nav Bar */
 
 .navbar {
@@ -16,8 +18,8 @@ body {
    justify-content: center;
    align-items: center;
    background-color: rgba(175, 175, 175, 0.5);
-   position: sticky;;
-   top: 0; 
+   position: sticky;
+   top: 100; 
 }
 
 .navbar ul {
@@ -33,7 +35,7 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 8px 25px;
     transition: all .5s ease;
 }
@@ -48,11 +50,23 @@ body {
 #home {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: lightblue;
     justify-content: center;
     align-items: center;
-    height: 840 px;
-    color: white;
+    height: 940 px;
+    color: black;
+}
+
+#home p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 40px;
+    text-align: center;
 }
 
 #home::before{
@@ -62,7 +76,7 @@ body {
     right: 0;
     background-color: lightblue;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     z-index: -1;
     opacity: .8;
 }
@@ -73,25 +87,25 @@ body {
     /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 30%;
-    right: 10%;
+    margin-top: 1000px;
 }
 
 .headings{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     text-align: center;
-    margin: 40px 0px;
+    margin: 20px 0px;
 
 }
 
 .btn {
     padding: 10px 35px;
     background-color: transparent;
-    border: 1px solid white;
-    color: aliceblue;
+    border: 1px solid black;
+    color: black;
     outline: none;
     transition: .6s ease;
+    margin-top: 40px;
 }
 
 .btn:hover{
@@ -102,32 +116,32 @@ body {
     font-weight: bold;
 }
 
-/*About Section*/
-#about {
+/*Pic Section*/
+#pic {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
-
 }
 
-#pic{
+#logo{
     display: flex;
-    z-index: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#pic img{
+#logo img{
     width: 400px;
     height: 400px;
+    position: relative;
+    align-content: center;
 }
 
-#intro{
+/*#intro{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
-}
+    padding: 100px;
+}*/
 
 #intro h2{
     font-size: 2rem;
@@ -136,3 +150,27 @@ body {
 }
 
 /* Portfolio Section */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    padding: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    background-color: lightblue;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
