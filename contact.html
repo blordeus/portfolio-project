@@ -4,28 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <h2 id="logo"><a href="/">Ada Lovelace</a></h2>
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="/#about-me">About Me</a></li>
-        <li class="navigation-item"><a href="/#projects">Projects</a></li>
-        <li class="navigation-item"><a href="/#skills">Skills</a></li>
-        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+    <nav class="navbar">
+      <ul>
+         <li><a href="portfolio-project.html">Home</a></li>
+         <li><a href="contact.html">Contact Me</a></li>
       </ul>
-    </nav>
+   </nav>
+
     <main>
       <section id="contact">
-        <h2>Contact</h2>
+        <h1 class="headings">Contact</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email"
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
         <p>Have an interesting project? I would love to hear about it!</p>
-        <div>
-          <a href="#"><i class="bxl-linkedin"></i></a>
-          <a href="#"><i class="bxl-github"></i></a>
-          <a href="#"><i class="bxl-email"></i></a>
-        </div>
       </section>
     </main>
   </body>
